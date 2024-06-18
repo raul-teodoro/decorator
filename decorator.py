@@ -64,8 +64,3 @@ class Palmito(Decorator):
     cost = 5.50
     def __init__(self, component):
         Decorator.__init__(self, component)
-
-pizza1 = Presunto(Mussarela(Tomate(Base())))
-print(pizza1.getDescription() + ": R$" + str(pizza1.getCost()))
-pizza2 = Frango(Milho(Palmito(Base())))
-print(pizza2.getDescription() + ": R$" + str(pizza2.getCost()))
